@@ -21,7 +21,7 @@ export default function RecordsTable({ records = [] }) {
       <div className="flex items-center justify-between mb-3">
         <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Records</h4>
         <div className="flex items-center gap-3">
-          <label className="text-sm text-gray-600 dark:text-gray-300">Rows</label>
+          <label className="text-sm text-gray-300 dark:text-gray-300">Rows</label>
           <select value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }} className="px-2 py-1 border rounded bg-white dark:bg-gray-700 dark:text-white">
             {[10,25,50,100].map(n => <option key={n} value={n}>{n}</option>)}
           </select>
@@ -31,7 +31,7 @@ export default function RecordsTable({ records = [] }) {
       {/* Native table for medium+ screens */}
       <div className="table-wrapper table-scroll">
         <table className="w-full text-left text-sm table-native">
-          <thead className="text-gray-600 dark:text-gray-300">
+          <thead className="text-gray-300 dark:text-gray-300">
             <tr>
               <th className="px-3 py-2">Title</th>
               <th className="px-3 py-2">Topic</th>
@@ -60,12 +60,12 @@ export default function RecordsTable({ records = [] }) {
             <div key={idx} className="record-card">
               <div className="flex justify-between items-start">
                 <div>
-                  <div className="font-semibold text-gray-800 dark:text-gray-100">{r.title ?? "-"}</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">{r.topic ?? "-"}</div>
+                  <div className="font-semibold text-gray-200 dark:text-gray-100">{r.title ?? "-"}</div>
+                  <div className="text-sm text-gray-200 dark:text-gray-300">{r.topic ?? "-"}</div>
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">{r.end_year ?? r.start_year ?? "-"}</div>
+                <div className="text-sm text-gray-200 dark:text-gray-300">{r.end_year ?? r.start_year ?? "-"}</div>
               </div>
-              <div className="mt-2 text-sm text-gray-700 dark:text-gray-300">{r.country ?? "-"}</div>
+              <div className="mt-2 text-sm text-gray-200 dark:text-gray-300">{r.country ?? "-"}</div>
             </div>
           ))}
         </div>
