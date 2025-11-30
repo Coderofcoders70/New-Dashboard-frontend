@@ -16,10 +16,10 @@ const options = {
   responsive: true,
   maintainAspectRatio: false,
   animation: { duration: 700, easing: "easeOutCubic" },
-  plugins: { legend: { labels: { color: "#374151" } } },
+  plugins: { legend: { labels: { color: "#ffffff" } } },
   scales: {
-    x: { ticks: { color: "#374151" } },
-    y: { ticks: { color: "#374151" } }
+    x: { ticks: { color: "#ffffff" } },
+    y: { ticks: { color: "#ffffff" } }
   }
 };
 
@@ -29,7 +29,7 @@ export default function IntensityChart({ data }) {
     datasets: [
       {
         label: "Avg intensity",
-        data: data.map(d => d.avgIntensity ?? 0),
+        data: data.map(d => d.avgIntensity ?? 0), 
         borderColor: "rgb(34,197,94)",
         backgroundColor: "rgba(34,197,94,0.08)",
         tension: 0.35,
@@ -41,7 +41,7 @@ export default function IntensityChart({ data }) {
 
   return (
     <div className="card bg-white dark:bg-gray-800 rounded-xl shadow p-4 h-64 md:h-80 transition">
-      <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Intensity over time</h3>
+      <h3 className="text-lg font-semibold mb-2 text-gray-100 dark:text-gray-200">Intensity over time</h3>
       <div className="h-44 md:h-56">
         <Line data={chartData} options={options} />
       </div>

@@ -37,7 +37,7 @@ export default function TopicFrequencyChart({ data }) {
 
   return (
     <div className="card bg-white dark:bg-gray-800 rounded-xl shadow p-4 h-64 md:h-80 transition">
-      <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-100">Top topics</h3>
+      <h3 className="text-lg font-semibold mb-2 text-gray-200 dark:text-gray-100">Top topics</h3>
       <div className="h-50 md:h-56">
         <Doughnut data={chartData} />
       </div>

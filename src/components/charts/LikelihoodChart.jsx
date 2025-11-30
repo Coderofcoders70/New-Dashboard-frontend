@@ -25,12 +25,12 @@ const options = {
   },
   plugins: {
     legend: {
-      labels: { color: "#374151" },
+      labels: { color: "#ffffff" },
     },
   },
   scales: {
-    x: { ticks: { color: "#374151" } },
-    y: { ticks: { color: "#374151" } },
+    x: { ticks: { color: "#ffffff" } },
+    y: { ticks: { color: "#ffffff" } },
   },
 };
 
@@ -56,7 +56,7 @@ export default function LikelihoodChart({ data }) {
 
   return (
     <div className="card bg-white dark:bg-gray-800 rounded-xl shadow p-4 h-64 md:h-80 transition">
-      <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-100">Likelihood by country</h3>
+      <h3 className="text-lg font-semibold mb-2 text-gray-200 dark:text-gray-100">Likelihood by country</h3>
       <div className="h-44 md:h-56">
         <Bar data={chartData} options={options} />
       </div>
