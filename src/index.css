@@ -1,11 +1,22 @@
 @import "tailwindcss";
 
 /* -- Component-based dark-mode overrides (B2) -- */
-
 /* Base bodies for components (light mode) */
-.header { background: transparent; }
-.card { background: rgb(189, 146, 218); color: #111827; border-radius: 10px;} /* bg-white */
-.sidebar { background: rgb(151, 66, 151); color: #111827; }
+.header { 
+  background: transparent; 
+}
+
+.card { 
+  background: rgb(189, 146, 218); 
+  color: #111827; 
+  border-radius: 10px;
+}
+
+.sidebar { 
+  background: rgb(151, 66, 151); 
+  color: #111827; 
+}
+
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -45,8 +56,16 @@
   transform: translateX(0);
 }
 
-.input { background: #f8fafc; color: #111827; border-color: #e5e7eb; }
-.btn { background: #059669; color: #ffffff; }
+.input { 
+  background: #f8fafc; 
+  color: #111827; 
+  border-color: #e5e7eb; 
+}
+
+.btn { 
+  background: #059669; 
+  color: #ffffff; 
+}
 
 /* Dark-mode overrides (only active when <html class="dark"> present) */
 .dark .card {
@@ -69,8 +88,14 @@
 }
 
 /* Table styling helpers */
-.table-wrapper { background: transparent; }
-.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-wrapper { 
+  background: transparent; 
+}
+
+.table-scroll { 
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+}
 
 /* Card fallback for very small screens */
 .record-card {
@@ -86,7 +111,9 @@
 }
 
 /* Header helpers */
-.header-bar { transition: background .2s ease; }
+.header-bar { 
+  transition: background .2s ease; 
+}
 
 /* small utility */
 .hidden-mobile { display: none; }
@@ -115,11 +142,22 @@
 
 
 /* ensure charts have transition when dark toggles */
-.chart-wrap { transition: background .2s ease, color .2s ease; }
+.chart-wrap { 
+  transition: background .2s ease, color .2s ease; 
+}
 
 /* small tweaks for ExportCSV button dark visibility (if using Tailwind classes missed) */
-.export-btn { background: #059669; color: white; padding: 0.45rem 0.75rem; border-radius: 0.375rem; }
-.dark .export-btn { background: #10b981; color: #071025; }
+.export-btn { 
+  background: #059669; 
+  color: white; 
+  padding: 0.45rem 0.75rem; 
+  border-radius: 0.375rem; 
+}
+
+.dark .export-btn { 
+  background: #10b981; 
+  color: #071025; 
+}
 
 /* When small screens (<= 480px), show card list instead of table */
 @media (max-width: 480px) {
@@ -229,6 +267,7 @@
   background: rgba(255,255,255,0.12);
 }
 
+/* Back-to-top  */
 .back-to-top {
   position: fixed;
   bottom: 11px;
