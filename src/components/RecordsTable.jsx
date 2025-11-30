@@ -60,12 +60,12 @@ export default function RecordsTable({ records = [] }) {
             <div key={idx} className="record-card">
               <div className="flex justify-between items-start">
                 <div>
-                  <div className="font-semibold text-gray-200 dark:text-gray-100">{r.title ?? "-"}</div>
-                  <div className="text-sm text-gray-200 dark:text-gray-300">{r.topic ?? "-"}</div>
+                  <div className="font-semibold text-gray-500 dark:text-gray-100">{r.title ?? "-"}</div>
+                  <div className="text-sm text-gray-500 dark:text-gray-300">{r.topic ?? "-"}</div>
                 </div>
-                <div className="text-sm text-gray-200 dark:text-gray-300">{r.end_year ?? r.start_year ?? "-"}</div>
+                <div className="text-sm text-gray-500 dark:text-gray-300">{r.end_year ?? r.start_year ?? "-"}</div>
               </div>
-              <div className="mt-2 text-sm text-gray-200 dark:text-gray-300">{r.country ?? "-"}</div>
+              <div className="mt-2 text-sm text-gray-500 dark:text-gray-300">{r.country ?? "-"}</div>
             </div>
           ))}
         </div>
